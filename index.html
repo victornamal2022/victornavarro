@@ -69,8 +69,8 @@
             <!-- Photo & Name -->
             <div class="text-center">
                 <div class="w-40 h-40 mx-auto rounded-full border-4 border-slate-600 overflow-hidden mb-4 bg-white flex items-center justify-center">
-                    <!-- Placeholder for image, user can replace src -->
-                    <img src="https://ui-avatars.com/api/?name=Victor+Navarro&size=200&background=1e293b&color=fff" alt="Víctor Navarro" class="w-full h-full object-cover">
+                    <!-- Reemplaza 'mi-foto.jpg' por el nombre real de tu imagen -->
+                    <img src="mi-foto.jpg" alt="Víctor Navarro" class="w-full h-full object-cover">
                 </div>
                 <h1 class="text-2xl font-bold tracking-wider">VÍCTOR NAVARRO</h1>
                 <h2 class="text-slate-400 font-medium mt-1">Ingeniero Mecánico</h2>
@@ -161,30 +161,30 @@
         </div>
 
         <!-- Right Main Content -->
-        <div class="w-full md:w-2/3 p-8 md:p-12">
+        <div class="w-full md:w-2/3 flex flex-col bg-white">
             
-            <!-- Header Title -->
-            <div class="mb-8">
-                <h2 class="text-3xl font-bold text-gray-800 uppercase tracking-tight">Ingeniero Mecánico <span class="text-blue-600 font-light">E Innovación</span></h2>
-                <p class="text-gray-500 mt-2 italic">Acelerando el desempeño, la seguridad y la rentabilidad en operaciones mineras e industriales.</p>
+            <!-- Hero Header with Mining Image -->
+            <div class="relative w-full h-64 md:h-72 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop');">
+                <!-- Overlay Gradient for text readability -->
+                <div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent"></div>
+                
+                <!-- Header Title inside Image -->
+                <div class="absolute inset-0 flex flex-col justify-center p-8 md:p-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white uppercase tracking-tight relative z-10 drop-shadow-md">
+                        Ingeniero Mecánico <br><span class="text-blue-400 font-light text-2xl md:text-3xl">E Innovación</span>
+                    </h2>
+                    <p class="text-gray-200 mt-4 italic relative z-10 font-medium max-w-lg drop-shadow">
+                        Acelerando el desempeño, la seguridad y la rentabilidad en operaciones mineras e industriales.
+                    </p>
+                </div>
             </div>
 
-            <!-- Profile Summary (Tailored for the target job) -->
-            <section class="mb-10">
-                <h3 class="text-xl font-bold text-gray-800 border-b-2 border-blue-600 pb-2 mb-4 uppercase tracking-wider flex items-center gap-2">
-                    <i class="fas fa-user-tie text-blue-600"></i> Perfil Profesional
-                </h3>
-                <p class="text-gray-600 leading-relaxed text-justify">
-                    Ingeniero Mecánico con especialización en Automatización Industrial y sólida trayectoria liderando operaciones de servicio, mantenimiento y posventa, con fuerte enfoque en el <strong>sector minero e industrial</strong>. Soy un profesional con "ADN innovador", apasionado por el desarrollo de soluciones sostenibles y con el coraje de impulsar cambios estratégicos.
-                </p>
-                <p class="text-gray-600 leading-relaxed text-justify mt-3">
-                    Mi gestión se basa en el principio <strong>"Primero la Seguridad" (SHEQ)</strong>. Poseo amplia experiencia garantizando la ejecución rentable de talleres y contratos de servicio, monitoreando rigurosamente KPIs (facturación, costos, productividad, variaciones de servicio) y asegurando la satisfacción total del cliente. Como líder, fomento la confianza, el trabajo colaborativo, la resiliencia y el desarrollo continuo de mi equipo para alcanzar la excelencia operativa.
-                </p>
-            </section>
+            <!-- Profile Summary and Content Below Hero -->
+            <div class="p-8 md:p-12 pt-8">
 
-            <!-- Experience -->
-            <section class="mb-10">
-                <h3 class="text-xl font-bold text-gray-800 border-b-2 border-blue-600 pb-2 mb-6 uppercase tracking-wider flex items-center gap-2">
+                <!-- Profile Summary (Tailored for the target job) -->
+                <section class="mb-10">
+                    <h3 class="text-xl font-bold text-gray-800 border-b-2 border-blue-600 pb-2 mb-4 uppercase tracking-wider flex items-center gap-2">
                     <i class="fas fa-briefcase text-blue-600"></i> Experiencia Profesional
                 </h3>
 
