@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Víctor Navarro Maldonado - Ingeniero Mecánico</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .print-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s;
+        }
+        .print-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        @media print {
+            body {
+                background-color: white;
+            }
+            .print-btn {
+                display: none !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+            .cv-container {
+                box-shadow: none !important;
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+        }
+        /* Custom progress bar color */
+        .bg-brand { background-color: #1e3a8a; } /* Deep Blue */
+        .text-brand { color: #1e3a8a; }
+        .border-brand { border-color: #1e3a8a; }
+    </style>
+</head>
+<body class="py-8 px-4 md:px-8">
+
+    <!-- Print Button -->
+    <button onclick="window.print()" class="print-btn bg-blue-600 text-white px-6 py-3 rounded-full font-semibold flex items-center gap-2 z-50">
+        <i class="fas fa-print"></i> Guardar como PDF
+    </button>
+
+    <!-- Main CV Container -->
+    <div class="cv-container max-w-5xl mx-auto bg-white shadow-2xl rounded-lg overflow-hidden flex flex-col md:flex-row">
+        
+        <!-- Left Sidebar (Contact, Skills, Education) -->
+        <div class="bg-slate-800 text-white w-full md:w-1/3 p-8 flex flex-col gap-8">
+            
+            <!-- Photo & Name -->
+            <div class="text-center">
+                <div class="w-40 h-40 mx-auto rounded-full border-4 border-slate-600 overflow-hidden mb-4 bg-white flex items-center justify-center">
+                    <!-- Placeholder for image, user can replace src -->
+                    <img src="https://ui-avatars.com/api/?name=Victor+Navarro&size=200&background=1e293b&color=fff" alt="Víctor Navarro" class="w-full h-full object-cover">
+                </div>
+                <h1 class="text-2xl font-bold tracking-wider">VÍCTOR NAVARRO</h1>
+                <h2 class="text-slate-400 font-medium mt-1">Ingeniero Mecánico</h2>
+                <div class="w-12 h-1 bg-blue-500 mx-auto mt-4 rounded"></div>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold uppercase tracking-wider mb-4 text-blue-400">Contacto</h3>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-phone w-5 text-center"></i>
+                        <span>+57 317 736 57 54</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-envelope w-5 text-center"></i>
+                        <span class="break-all">victornamal@gmail.com</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-map-marker-alt w-5 text-center"></i>
+                        <span>Fonseca, La Guajira, Colombia</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fab fa-linkedin w-5 text-center"></i>
+                        <a href="https://www.linkedin.com/in/víctor-navarro-maldonado-552032153/" target="_blank" class="hover:text-blue-300 transition">Perfil de LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Core Competencies (Targeted for the Job) -->
+            <div>
+                <h3 class="text-lg font-semibold uppercase tracking-wider mb-4 text-blue-400">Competencias Clave</h3>
+                <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span class="bg-slate-700 px-3 py-1 rounded-full border border-slate-600">Liderazgo de Equipos</span>
+                    <span class="bg-slate-700 px-3 py-1 rounded-full border border-slate-600">Cultura SHEQ (Seguridad)</span>
+                    <span class="bg-slate-700 px-3 py-1 rounded-full border border-slate-600">Gestión de Contratos</span>
+                    <span class="bg-slate-700 px-3 py-1 rounded-full border border-slate-600">Control de Costos y KPIs</span>
+                    <span class="bg-slate-700 px-3 py-1 rounded-full border border-slate-600">Orientación al Cliente</span>
+                    <span class="bg-slate-700 px-3 py-1 rounded-full border border-slate-600">Innovación y Mejora Continua</span>
+                    <span class="bg-slate-700 px-3 py-1 rounded-full border border-slate-600">Sector Minero</span>
+                </div>
+            </div>
+
+            <!-- Hard Skills / Tools -->
+            <div>
+                <h3 class="text-lg font-semibold uppercase tracking-wider mb-4 text-blue-400">Herramientas IT & Gestión</h3>
+                <div class="space-y-3 text-sm">
+                    <div>
+                        <div class="flex justify-between mb-1"><span>Looker Studio</span> <span>100%</span></div>
+                        <div class="w-full bg-slate-600 rounded-full h-1.5"><div class="bg-blue-400 h-1.5 rounded-full" style="width: 100%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1"><span>Suite Google / Workspace</span> <span>100%</span></div>
+                        <div class="w-full bg-slate-600 rounded-full h-1.5"><div class="bg-blue-400 h-1.5 rounded-full" style="width: 100%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1"><span>MS Project</span> <span>80%</span></div>
+                        <div class="w-full bg-slate-600 rounded-full h-1.5"><div class="bg-blue-400 h-1.5 rounded-full" style="width: 100%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1"><span>Solidworks & Solidedge</span> <span>80%</span></div>
+                        <div class="w-full bg-slate-600 rounded-full h-1.5"><div class="bg-blue-400 h-1.5 rounded-full" style="width: 80%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1"><span>Appsheet / Transformación Digital</span> <span>70%</span></div>
+                        <div class="w-full bg-slate-600 rounded-full h-1.5"><div class="bg-blue-400 h-1.5 rounded-full" style="width: 70%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1"><span>SAP / AMT / Python</span> <span>Básico/Intermedio</span></div>
+                        <div class="w-full bg-slate-600 rounded-full h-1.5"><div class="bg-blue-400 h-1.5 rounded-full" style="width: 40%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div>
+                <h3 class="text-lg font-semibold uppercase tracking-wider mb-4 text-blue-400">Idiomas</h3>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex justify-between items-center">
+                        <span>Español</span> <span class="text-slate-400">Nativo</span>
+                    </li>
+                    <li class="flex justify-between items-center">
+                        <span>Inglés</span> <span class="text-slate-400">Intermedio</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Right Main Content -->
+        <div class="w-full md:w-2/3 p-8 md:p-12">
+            
+            <!-- Header Title -->
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 uppercase tracking-tight">Ingeniero Mecánico <span class="text-blue-600 font-light">E Innovación</span></h2>
+                <p class="text-gray-500 mt-2 italic">Acelerando el desempeño, la seguridad y la rentabilidad en operaciones mineras e industriales.</p>
+            </div>
+
+            <!-- Profile Summary (Tailored for the target job) -->
+            <section class="mb-10">
+                <h3 class="text-xl font-bold text-gray-800 border-b-2 border-blue-600 pb-2 mb-4 uppercase tracking-wider flex items-center gap-2">
+                    <i class="fas fa-user-tie text-blue-600"></i> Perfil Profesional
+                </h3>
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    Ingeniero Mecánico con especialización en Automatización Industrial y sólida trayectoria liderando operaciones de servicio, mantenimiento y posventa, con fuerte enfoque en el <strong>sector minero e industrial</strong>. Soy un profesional con "ADN innovador", apasionado por el desarrollo de soluciones sostenibles y con el coraje de impulsar cambios estratégicos.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-justify mt-3">
+                    Mi gestión se basa en el principio <strong>"Primero la Seguridad" (SHEQ)</strong>. Poseo amplia experiencia garantizando la ejecución rentable de talleres y contratos de servicio, monitoreando rigurosamente KPIs (facturación, costos, productividad, variaciones de servicio) y asegurando la satisfacción total del cliente. Como líder, fomento la confianza, el trabajo colaborativo, la resiliencia y el desarrollo continuo de mi equipo para alcanzar la excelencia operativa.
+                </p>
+            </section>
+
+            <!-- Experience -->
+            <section class="mb-10">
+                <h3 class="text-xl font-bold text-gray-800 border-b-2 border-blue-600 pb-2 mb-6 uppercase tracking-wider flex items-center gap-2">
+                    <i class="fas fa-briefcase text-blue-600"></i> Experiencia Profesional
+                </h3>
+
+                <!-- Experience Item 1 -->
+                <div class="mb-8 relative pl-6 border-l-2 border-gray-200">
+                    <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-[7px] top-1.5"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h4 class="text-lg font-bold text-gray-800">Supervisor de Proyecto (Operaciones de Servicio)</h4>
+                        <span class="text-sm font-semibold text-gray-500">Jun 2021 - Oct 2021</span>
+                    </div>
+                    <h5 class="text-md font-medium text-gray-600 mb-3">KAL TIRE Mining Tire Group</h5>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm">
+                        <li><strong>Liderazgo Operativo:</strong> Supervisión integral de los trabajos en la operación minera, garantizando el cumplimiento estricto de estándares, contratos de servicio y procedimientos operativos.</li>
+                        <li><strong>Gestión SHEQ:</strong> Mantenimiento de altos niveles de seguridad, calidad y productividad, promoviendo una cultura de autocuidado en el equipo de terreno.</li>
+                        <li><strong>Relacionamiento con Cliente:</strong> Aseguramiento de la entrega oportuna de equipos y respuesta ágil ante requerimientos y reclamos en sitio.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="mb-8 relative pl-6 border-l-2 border-gray-200">
+                    <div class="absolute w-3 h-3 bg-gray-400 rounded-full -left-[7px] top-1.5"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h4 class="text-lg font-bold text-gray-800">Ingeniero Residente</h4>
+                        <span class="text-sm font-semibold text-gray-500">Dic 2021 - May 2022</span>
+                    </div>
+                    <h5 class="text-md font-medium text-gray-600 mb-3">INDUSTRIAS ORYODA (Extractora Monterrey S.A.)</h5>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm">
+                        <li><strong>Gestión de Contratos y Presupuestos:</strong> Administración directa de la rentabilidad y el presupuesto de mantenimientos de la planta extractora.</li>
+                        <li><strong>Optimización de Recursos:</strong> Control de inventario de repuestos y herramientas, garantizando la disponibilidad para la ejecución sostenible del servicio.</li>
+                        <li><strong>Planificación Integral:</strong> Mantenimiento permanente de equipos clave (prensado, molienda, empaque), asegurando la continuidad del negocio y el cumplimiento de los acuerdos de servicio (SLAs).</li>
+                    </ul>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="mb-8 relative pl-6 border-l-2 border-gray-200">
+                    <div class="absolute w-3 h-3 bg-gray-400 rounded-full -left-[7px] top-1.5"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h4 class="text-lg font-bold text-gray-800">Planeador / Programador de Mantenimiento</h4>
+                        <span class="text-sm font-semibold text-gray-500">Jun 2016 - Jul 2020</span>
+                    </div>
+                    <h5 class="text-md font-medium text-gray-600 mb-3">KAL TIRE Mining Tire Group</h5>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm">
+                        <li><strong>Análisis y KPIs:</strong> Monitoreo y mejora del desempeño operativo a través del análisis de indicadores de rendimiento (KPIs), proyectando cambios para maximizar la vida útil de los activos mineros.</li>
+                        <li><strong>Ejecución de Servicios:</strong> Programación y aseguramiento del cumplimiento de planes de mantenimiento preventivo y correctivo, gestionando órdenes de servicio en sistemas informáticos.</li>
+                        <li><strong>Soporte Administrativo:</strong> Requerimiento oportuno de repuestos, gestión de recursos e implementación de mejores prácticas para elevar la eficiencia operativa.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience Item 4 -->
+                <div class="mb-8 relative pl-6 border-l-2 border-gray-200">
+                    <div class="absolute w-3 h-3 bg-gray-400 rounded-full -left-[7px] top-1.5"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h4 class="text-lg font-bold text-gray-800">Desarrollador Junior (Innovación & Digitalización)</h4>
+                        <span class="text-sm font-semibold text-gray-500">Ene 2023 - Jul 2023</span>
+                    </div>
+                    <h5 class="text-md font-medium text-gray-600 mb-3">BackApp S.A.S.</h5>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm">
+                        <li>Levantamiento y análisis de requerimientos directamente con el cliente (Orientación al cliente).</li>
+                        <li>Desarrollo e implementación de aplicaciones usando plataformas Low-Code (Appsheet) para digitalizar procesos operativos.</li>
+                        <li>Soporte técnico, garantizando niveles óptimos de satisfacción en la posventa.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience Item 5 (Current) -->
+                <div class="relative pl-6 border-l-2 border-transparent">
+                    <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-[7px] top-1.5"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h4 class="text-lg font-bold text-gray-800">Supervisor de Operaciones</h4>
+                        <span class="text-sm font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">Jul 2023 - Actualidad</span>
+                    </div>
+                    <h5 class="text-md font-medium text-gray-600 mb-3">CHM MINERIA S.A.S.</h5>
+                    <p class="text-gray-600 text-sm mb-2 italic">Destacado por mi capacidad de análisis y gestión de procesos operativos, impulsando la excelencia operacional.</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm">
+                        <li><strong>Calidad y Resolución:</strong> Aseguramiento de la calidad de los trabajos ejecutados, gestión oportuna de reclamos y análisis de indicadores (KPIs) para la toma de decisiones.</li>
+                        <li><strong>Work Management:</strong> Implementación de estrategias de mejora continua a través de una rigurosa gestión del trabajo, optimizando los flujos operativos.</li>
+                        <li><strong>Innovación Digital:</strong> Desarrollo e implementación de una plataforma integral para la gestión del mantenimiento de forma ágil e intuitiva.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Education & Certifications -->
+            <section>
+                <h3 class="text-xl font-bold text-gray-800 border-b-2 border-blue-600 pb-2 mb-6 uppercase tracking-wider flex items-center gap-2">
+                    <i class="fas fa-graduation-cap text-blue-600"></i> Formación Académica
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Edu 1 -->
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h4 class="font-bold text-gray-800 text-sm">Especialización en Automatización Industrial</h4>
+                        <p class="text-blue-600 text-xs font-semibold my-1">U. Francisco de Paula Santander | 2018</p>
+                        <p class="text-gray-600 text-xs mt-2">Desarrollo de prototipo de control de temperatura para vulcanizado OTR, logrando mitigación de riesgos de incendio (Innovación y Seguridad).</p>
+                    </div>
+                    
+                    <!-- Edu 2 -->
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h4 class="font-bold text-gray-800 text-sm">Ingeniería Mecánica</h4>
+                        <p class="text-blue-600 text-xs font-semibold my-1">U. Francisco de Paula Santander | 2009 - 2016</p>
+                        <p class="text-gray-600 text-xs mt-2">Matrícula Profesional vigente. Destacado en investigación, desarrollo y participación en concursos nacionales de robótica e innovación.</p>
+                    </div>
+                </div>
+
+                <h4 class="font-bold text-gray-800 mt-6 mb-3 text-sm uppercase tracking-wide">Cursos y Certificaciones Relevantes</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-50 text-blue-700 border border-blue-200 px-3 py-1.5 rounded text-xs font-medium"><i class="fas fa-check-circle mr-1"></i> Módulo de Enfoque al Cliente (Kal Tire)</span>
+                    <span class="bg-blue-50 text-blue-700 border border-blue-200 px-3 py-1.5 rounded text-xs font-medium"><i class="fas fa-check-circle mr-1"></i> Trabajo Seguro en Alturas (SENA)</span>
+                    <span class="bg-blue-50 text-blue-700 border border-blue-200 px-3 py-1.5 rounded text-xs font-medium"><i class="fas fa-check-circle mr-1"></i> Mantenimiento de Máquinas Industriales</span>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+</html>
